@@ -1,0 +1,30 @@
+APPRENTICE
+
+This lab has an unprotected admin panel. It's located at an unpredictable location, but the location is disclosed somewhere in the application.
+
+Solve the lab by accessing the admin panel, and using it to delete the user carlos.
+
+Como dito, vamos inspecionar nossa página e achar o local 'escondido':
+
+ctrl+shift+i
+
+Após isso, vá para página de login e usa a opção "select an element in page to inspect it", no canto superior esquerdo e clique no My Account. Você verá algo assim:
+
+
+var isAdmin = false;
+if (isAdmin) {
+   var topLinksTag = document.getElementsByClassName("top-links")[0];
+   var adminPanelTag = document.createElement('a');
+   adminPanelTag.setAttribute('href', '/admin-pttpkl');
+   adminPanelTag.innerText = 'Admin panel';
+   topLinksTag.append(adminPanelTag);
+   var pTag = document.createElement('p');
+   pTag.innerText = '|';
+   topLinksTag.appendChild(pTag);
+}
+
+Vemos que aqui adminPanelTag.setAttribute('href', '/admin-pttpkl'); tem um href com o nome admin-pttpkl
+
+https://0a8a00e304ccc79b82fd7e950035006d.web-security-academy.net/admin-pttpkl
+
+Delete o usuário e apresente a vulnerabilidade de acesso de controle por meio de url fornecida de forma errada no código
