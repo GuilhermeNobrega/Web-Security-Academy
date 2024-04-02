@@ -19,4 +19,4 @@ E achamos isso:
 User-agent: *
 Disallow: /administrator-panel
 
-depois só concluir o proposito do pentest
+Depois só concluir o proposito do pentest (Apresentar a vulnerabilidade de acesso a página de admin sem ser admin.) e apagar o usuário 
