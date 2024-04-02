@@ -20,3 +20,12 @@ User-agent: *
 Disallow: /administrator-panel
 
 Depois só concluir o proposito do pentest (Apresentar a vulnerabilidade de acesso a página de admin sem ser admin.) e apagar o usuário 
+
+https://owasp.org/Top10/A01_2021-Broken_Access_Control/
+
+Este arquivo fica hospedado na raiz do site e apresenta instruções aos robôs das ferramentas de busca, como por exemplo o Google, Bing e Yahoo.
+Portanto, por meio dele é possível indicar quais diretórios que não devem ser rastreados e arquivos que não devem ser indexados, POIS:
+
+Os robôs das ferramentas de busca são programados para vasculhar toda a web em busca de novas páginas ou atualizações para indexar elas nos resultados de busca.
+
+E caso a gente não queira que os robôs rastreiem determinados recursos de nossas aplicações? Aí sim que nesse caso entra em ação o arquivo robots.txt visto.
