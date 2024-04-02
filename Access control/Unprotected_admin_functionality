@@ -1,0 +1,22 @@
+APPRENTICE
+This lab has an unprotected admin panel.
+
+Solve the lab by deleting the user carlos.
+
+Para fazer isso, testaremos outras possíveis urls de acesso a páginas:
+
+https://0a8800f20438126a80d8b7cd001b0071.web-security-academy.net/login (padrão)
+https://0a8800f20438126a80d8b7cd001b0071.web-security-academy.net/admin (mudei)
+Em vez de tentar diversas vezes, como uma força bruta, tem um jeito melhor:
+
+https://0a8800f20438126a80d8b7cd001b0071.web-security-academy.net/robots.txt
+
+Basicamente quando temos uma aplicação web, podemos esconder algumas páginas, evitando que o usuário tenha acesso a aquela página e conteúdo.
+O robots.txt vai nos apresentar essas páginas, que não apareceriam por sí só.
+
+E achamos isso:
+
+User-agent: *
+Disallow: /administrator-panel
+
+depois só concluir o proposito do pentest
