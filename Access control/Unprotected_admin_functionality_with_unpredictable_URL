@@ -28,3 +28,10 @@ Vemos que aqui adminPanelTag.setAttribute('href', '/admin-pttpkl'); tem um href 
 https://0a8a00e304ccc79b82fd7e950035006d.web-security-academy.net/admin-pttpkl
 
 Delete o usuário e apresente a vulnerabilidade de acesso de controle por meio de url fornecida de forma errada no código
+------------------------------------------------------------------------------------------------------------------------
+
+Com o burpsuit: abra ele e clique em open browser ( deixe intercept off)
+
+Após abrir o site, irá aparecer algumas informações importantes nele. Para acharmos a falha, clique em action e send to repeater. Na aba repeater, clique em send e veja o html em Response
+
+Se tiver o login do site tente logar e ver a pagina, usando burpsuit você pode mudar o cookie do adm para true e repetir etapa de desligar e ligar o intercept, para não ficar uma página infinita
