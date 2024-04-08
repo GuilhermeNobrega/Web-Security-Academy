@@ -19,3 +19,5 @@ Content-Length: 118
 Após enviar para o repeater, mudo o roleid para 2 e clique em  send
 
 Depois volte ao proxy, dê um forward para devolver a resposta para o servidor e após isso, pare a intercptação e recarregue a página
+
+Algumas aplicações fazem o controle de acesso por meio de funções do usuário ao fazer login e, em seguida, armazena informações do mesmo em IDs em arquivos JSON ou cookies.
