@@ -4,3 +4,18 @@ Solve the lab by accessing the admin panel and using it to delete the user carlo
 
 You can log in to your own account using the following credentials: wiener:peter
 
+Location: /my-account
+Content-Type: application/json; charset=utf-8
+X-Frame-Options: SAMEORIGIN
+Content-Length: 118
+
+{
+  "username": "wiener",
+  "email": "joji@gmail.com",
+  "apikey": "AqzyshxPAu7ZsvrUc1PDT2iLdtJ7fJHP",
+  "roleid": 2
+}
+
+Após enviar para o repeater, mudo o roleid para 2 e clique em  send
+
+Depois volte ao proxy, dê um forward para devolver a resposta para o servidor e após isso, pare a intercptação e recarregue a página
