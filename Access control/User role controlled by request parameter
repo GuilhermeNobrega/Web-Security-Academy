@@ -1,0 +1,12 @@
+This lab has an admin panel at /admin, which identifies administrators using a forgeable cookie.
+
+Solve the lab by accessing the admin panel and using it to delete the user carlos.
+
+You can log in to your own account using the following credentials: wiener:peter
+
+Mude o cookie para para true
+
+admin=false
+admin=true
+
+de foward no burpsuit para o site atualizar com os métodos post e receber gets
